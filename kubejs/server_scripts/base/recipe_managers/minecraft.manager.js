@@ -11,6 +11,7 @@ function replaceShapeless(output, input) {
     removeRecipe({ type: 'minecraft:crafting_shapeless', output: output })
     return addShapeless(output, input)
 }
+
 /**
  * @param {result} output 
  * @param {string[]} pattern ['aaa','bbb','aaa']
@@ -27,6 +28,7 @@ function addShaped(output, pattern, key) {
     modpackRecipes.push(recipe)
     return recipe;
 }
+
 /**
  * @param {result} output '4x stick'
  * @param {ingredient[]} input ['glass','stick'] 
@@ -45,6 +47,7 @@ function addShapeless(output, input) {
     modpackRecipes.push(recipe)
     return recipe;
 }
+
 /**
  * @param {result} output '4x stick'
  * @param {ingredient} input 'glass' 
@@ -62,6 +65,7 @@ function addStonecutting(output, input, hidden) {
     modpackRecipes.push(recipe)
     return recipe;
 }
+
 /**
  * @param {result} output
  * @param {ingredient} input 
@@ -77,6 +81,7 @@ function addSmithing(output, input, addition) {
     modpackRecipes.push(recipe)
     return recipe;
 }
+
 /**
  * @param {result} output 
  * @param {ingredient} input 
@@ -86,6 +91,7 @@ function addSmithing(output, input, addition) {
 function addSmelting(output, input, experience, cookingTime) {
     return mcProcess('minecraft:smelting', output, input, experience, cookingTime)
 }
+
 /**
  * @param {result} output 
  * @param {ingredient} input 
@@ -95,6 +101,7 @@ function addSmelting(output, input, experience, cookingTime) {
 function addCampfire(output, input, experience, cookingTime) {
     return mcProcess('minecraft:campfire_cooking', output, input, experience, cookingTime)
 }
+
 /**
  * @param {result} output 
  * @param {ingredient} input 
@@ -104,6 +111,7 @@ function addCampfire(output, input, experience, cookingTime) {
 function addBlasting(output, input, experience, cookingTime) {
     return mcProcess('minecraft:blasting', output, input, experience, cookingTime)
 }
+
 /**
  * @param {result} output 
  * @param {ingredient} input 
@@ -113,6 +121,7 @@ function addBlasting(output, input, experience, cookingTime) {
 function addSmoking(output, input, experience, cookingTime) {
     return mcProcess('minecraft:smoking', output, input, experience, cookingTime)
 }
+
 function mcProcess(type, output, input, experience, cookingTime) {
     if (!experience) experience = 10
     let recipe = {type: type};
@@ -123,4 +132,3 @@ function mcProcess(type, output, input, experience, cookingTime) {
     modpackRecipes.push(recipe)
     return recipe;
 }
-
