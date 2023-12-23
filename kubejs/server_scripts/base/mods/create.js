@@ -92,16 +92,6 @@ if (feature("Cogs")) {
   addShapeless("create:cogwheel", "create:large_cogwheel");
   addStonecutting("create:cogwheel", "create:large_cogwheel");
   addStonecutting("create:large_cogwheel", "create:cogwheel");
-  addItemApplication(
-    "create:large_cogwheel",
-    "create:cogwheel",
-    "#forge:tools/axes"
-  );
-  addItemApplication(
-    "create:cogwheel",
-    "create:large_cogwheel",
-    "#forge:tools/axes"
-  );
 }
 
 if (feature("Application recipes")) {
@@ -294,8 +284,25 @@ if (feature("Metal gridder no gray ingot")) {
   });
 }
 
+if (feature('Monorail track alternate recipe')) {
+  removeRecipe({id: "railways:sequenced_assembly/track_monorail"})
+  addAssembly(
+    ["32x railways:track_monorail"],
+    "create:metal_girder",
+    [
+      addDeploying(
+        "create:metal_girder",
+        "create:metal_girder",
+        "create:metal_girder"
+      ),
+    ],
+    16,
+    "create:incomplete_track"
+  );
+}
 if (feature("Blaze is capturable")) {
   ServerEvents.tags("entity_type", (event) => {
     event.add("create:blaze_burner_capturable", ["more_babies:blaze"]);
   });
 }
+
