@@ -1,0 +1,58 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.inventory.InventoryScreen
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = fancymenu_data/default_tab.png
+  orientation = mid-centered
+  x = -87
+  width = 25
+  action = addtexture
+  actionid = 70fee027-cb89-443d-9deb-7de140dbbaba1703379656334
+  y = -106
+  height = 23
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = sendmessage;/openStonecutter%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/stonecutter_tab_selected.png
+  label = 
+  loopbackgroundanimations = true
+  x = -61
+  width = 25
+  action = addbutton
+  actionid = e3cd6bf1-55ec-4068-87db-5ee2534a77321703379720291
+  y = -106
+  backgroundnormal = fancymenu_data/stonecutter_tab.png
+  height = 23
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = sendmessage;/openPonderIndex%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/ponder_index_tab_selected.png
+  label = 
+  loopbackgroundanimations = true
+  x = -35
+  width = 25
+  action = addbutton
+  actionid = 8bdd6d6e-aed6-4d79-902f-027a0ac59f441703379820587
+  y = -106
+  backgroundnormal = fancymenu_data/ponder_index_tab.png
+  height = 23
+}
+
