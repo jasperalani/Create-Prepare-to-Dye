@@ -1,0 +1,65 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.inventory.InventoryScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = sendmessage;/openStonecutter%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/transparent_selected.png
+  label = 
+  loopbackgroundanimations = true
+  x = 213
+  width = 16
+  action = addbutton
+  actionid = 31906fd0-45ea-4329-98a9-9cc1d865aa221703512960092
+  y = 47
+  backgroundnormal = fancymenu_data/transparent.png
+  height = 17
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = sendmessage;/openPonderIndex%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/transparent.png
+  description = Ponder Index
+  label = 
+  loopbackgroundanimations = true
+  x = -37
+  width = 16
+  action = addbutton
+  actionid = 71a1a821-a88f-4e20-a25f-b5e87e98f0841703513307694
+  y = -101
+  backgroundnormal = fancymenu_data/transparent.png
+  height = 17
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = sendmessage;/openPonderIndex%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/transparent.png
+  description = Ponder Index
+  label = 
+  loopbackgroundanimations = true
+  x = -58
+  width = 16
+  action = addbutton
+  actionid = 83d11766-e9b7-4d9c-8535-e9e16562d3e81703513427523
+  y = -101
+  backgroundnormal = fancymenu_data/transparent.png
+  height = 17
+}
+

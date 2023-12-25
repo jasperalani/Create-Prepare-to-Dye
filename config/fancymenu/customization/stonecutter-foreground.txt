@@ -1,0 +1,49 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.inventory.StonecutterScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = opengui;net.minecraft.client.gui.screens.inventory.InventoryScreen%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/transparent.png
+  description = Inventory
+  label = 
+  loopbackgroundanimations = true
+  x = -87
+  width = 19
+  action = addbutton
+  actionid = 72962d47-dff4-446c-a1ca-30d103aa595f1703513727898
+  y = -102
+  backgroundnormal = fancymenu_data/transparent.png
+  height = 18
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = sendmessage;/openPonderIndex%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/transparent.png
+  description = Ponder Index
+  label = 
+  loopbackgroundanimations = true
+  x = -39
+  width = 18
+  action = addbutton
+  actionid = a154d833-25fb-4f16-960a-70963f734a481703513819799
+  y = -101
+  backgroundnormal = fancymenu_data/transparent.png
+  height = 18
+}
+

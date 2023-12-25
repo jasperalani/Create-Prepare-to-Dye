@@ -1,0 +1,26 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.inventory.StonecutterScreen
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = fancymenu_data/tabs-stonecutter-selected.png
+  orientation = mid-centered
+  x = -88
+  width = 255
+  action = addtexture
+  actionid = 007c0351-8bcf-40a4-9b4d-e04a25090d371703513495514
+  y = -105
+  height = 31
+}
+

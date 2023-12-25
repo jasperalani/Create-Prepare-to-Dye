@@ -1,0 +1,41 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.inventory.InventoryScreen
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=570488%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=516478%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=438425%
+  action = hidebutton
+}
+
+customization {
+  path = fancymenu_data/tabs-default-selected.png
+  orientation = mid-centered
+  x = -88
+  width = 258
+  action = addtexture
+  actionid = 91ec1cb4-a9f0-4706-846d-4fc44c4650fb1703512735264
+  y = -105
+  height = 30
+}
+
