@@ -23,29 +23,11 @@ public class OpenStonecutter {
         }));
     }
     
-    private static int execute(CommandContext<CommandSourceStack> command)  {
+    private static int execute(CommandContext<CommandSourceStack> command){
         if(command.getSource().getEntity() instanceof Player){
-
-            // get mouse location
-//            Point p = MouseInfo.getPointerInfo().getLocation();
-
             Player player = (Player) command.getSource().getEntity();
             player.openMenu(getMenuProvider());
-<<<<<<< Updated upstream
         	LogUtils.getLogger().info("Opened stonecutter gui");
-=======
-
-            // set mouse location
-//            Robot myRobot = null;
-//            try {
-//                myRobot = new Robot();
-//            } catch (AWTException e) {
-//                throw new RuntimeException(e);
-//            }
-//            myRobot.mouseMove(p.x, p.y);
-
-
->>>>>>> Stashed changes
         }
         return Command.SINGLE_SUCCESS;
     }
